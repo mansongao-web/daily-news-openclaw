@@ -1,0 +1,5 @@
+.env
+workspace/.sessions/
+workspace/daily-news/sent.jsonl
+cron/jobs-state.json
+*.log

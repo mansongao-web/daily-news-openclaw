@@ -1,0 +1,28 @@
+{
+  "agent": {
+    "model": "openrouter/anthropic/claude-sonnet-4.5"
+  },
+
+  "providers": {
+    "openrouter": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "apiKey": "${OPENROUTER_API_KEY}"
+    }
+  },
+
+  "cron": {
+    "enabled": true,
+    "store": "~/.openclaw/cron/jobs.json",
+    "maxConcurrentRuns": 1
+  },
+
+  "hooks": {
+    "enabled": true,
+    "token": "${OPENCLAW_HOOK_TOKEN}",
+    "path": "/hooks"
+  },
+
+  "skills": {
+    "autoload": ["daily-news"]
+  }
+}
